@@ -1,12 +1,12 @@
 
-# Relichaos - Print-On-Demand E-Commerce Platform
-This repository contains the full source code for **Relichaos**, a minimalist, e-commerce landing page and preorder system designed for print-on-demand streetwear caps.
+# Relichaos - E-Commerce Platform
+This repository contains the full source code for **Relichaos**, a minimalist, e-commerce landing page and preorder system designed for streetwear apparel.
 
 ## Project Overview
 Relichaos is built to enable small-scale, bootstrap apparel brands to launch and sell products without upfront inventory or complex payment gateways. It uses a lightweight backend and simple frontend to streamline order capture and brand storytelling.
 
 ## Tech Stack
-- **Backend:** Python Flask — lightweight web framework for routing and backend logic
+- **Backend:** Python Flask web framework for routing and backend logic
 - **Frontend:** HTML5, CSS3, Vanilla JavaScript — simple, responsive UI with dark-themed styling
 - **Data Storage:** Google Sheets API integration for order management (preorder capture without a database)
 - **Email Capture:** Integration with Mailchimp or simple form submission for building mailing lists
