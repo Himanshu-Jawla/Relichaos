@@ -1,55 +1,28 @@
-
+<!-- templates/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>RELICHAOS | Sacred Rebellion</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RELICHAOS</title>
-  <link rel="stylesheet" href="../css_styles/style.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-  <section class="hero">
-    <div class="content">
-      <img src="../static_assets/logo.png" alt="Relichaos Logo" class="logo">
+  <div class="container">
+    <header>
+      <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Relichaos Logo" class="logo">
       <h1>RELICHAOS</h1>
-      <p class="tagline">Where Chaos Meets the Sacred</p>
-      <a href="#drop" class="cta-button">Enter the Chaos</a>
-    </div>
-  </section>
+      <p class="tagline">Sacred Rebellion Worn on Your Head</p>
+    </header>
 
-  <section id="drop" class="drop-preview">
-    <img src="../static_assets/cap_mockup_1.png" alt="Cap Mockup" class="cap-mockup">
-    <h2>DROP 01: SACRED REBELLION</h2>
-    <p>Limited Chaoswear infused with myth, karma, and fire. Preorder now. No second chances.</p>
-  </section>
+    <main>
+      <a href="/preorder" class="cta-button">Pre-Order Drop 001</a>
+    </main>
 
-  <section class="about">
-    <h2>THE MYTH BEHIND RELICHAOS</h2>
-    <p>
-      RELICHAOS isn’t just a brand it’s a resurrection. Born from shadows, built in rebellion,
-      worn by souls who survived their own apocalypse. Every piece tells a story of sacred defiance.
-    </p>
-  </section>
-
-  <section class="preorder">
-    <h2>PREORDER CHAOS</h2>
-    <form action="/preorder" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <select name="cap">
-        <option value="sacred-rebellion">Sacred Rebellion</option>
-      </select>
-      <button type="submit">Secure Drop</button>
-    </form>
-    <p class="form-note">No cap stock. No restock. No chaos twice.</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 RELICHAOS. All chaos preserved.</p>
-    <div class="socials">
-      <a href="#">Instagram</a>
-      <a href="#">Email</a>
-    </div>
-  </footer>
+    <footer>
+      <p>© 2025 RELICHAOS. All rights reserved.</p>
+      <a href="https://instagram.com/relichaos" target="_blank">Instagram</a>
+    </footer>
+  </div>
 </body>
 </html>
